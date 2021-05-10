@@ -1,0 +1,6 @@
+switch 사용 연습
+
+character 변수 ch에 'B' 혹은 'b'가 들어있으면 printf("Battle"); 이 출력되고,
+'C' 혹은 'c'가 들어있으면 printf("Cruiser"); 이 출력되고,
+그 이외의 값이 들어있으면 printf("Unknown"); 이 출력되는 문장을
+switch 문장을 사용하여 작성하시오.
