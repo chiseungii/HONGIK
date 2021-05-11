@@ -1,0 +1,21 @@
+파일에서 국영수 성적 읽어들여 합 평균 계산하기
+성적을 array에 저장해 둘 것.
+
+파일에 저장된 내용
+
+KIM 90 95 90
+Lee 80 100 95
+Park 85 95 97
+출력은 화면에도 출력하고
+파일로도 출력할 것.
+
+FILE *ip, *op;
+
+ip = fopen(“input.txt”, “r”);
+op = fopen(“output.txt”, “w”);
+fscanf(ip, “%s %d %d %d”, ...);
+fprintf(op, “%s %d %d %d sum=%f avg=%f\n”, ...);
+
+사용함.
+
+경고 windows 프로그래밍 할 때 파일 경로 철저히 지정할 것.
