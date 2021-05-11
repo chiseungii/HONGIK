@@ -1,0 +1,14 @@
+정수 문자열을 입력 받아 숫자 정수로 바꾸는 프로그램 – array 사용
+
+int myatoi()
+{ // ?????
+}
+void main()
+{
+char myint[20];
+scanf(“%s”, myint); // 입력으로 54321 이란 문자열을 입력
+
+// 출력으로 54321을 반환
+
+printf(“%d\n”, myatoi(myint));
+}
