@@ -1,0 +1,7 @@
+mystrcat(a, b) 문자열 덧붙이기 – *a++ 버전
+
+str1[30] = “first-”;
+str2[] = “second”;
+
+mystrcat(str1, str2);
+결과 str1은 “first-second”가 됨.
