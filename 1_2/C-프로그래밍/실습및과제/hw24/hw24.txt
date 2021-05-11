@@ -1,0 +1,11 @@
+문자열을 입력 받아 대문자로만 구성된 문자열로 바꾸는 프로그램 – array 사용
+
+char str[20]; // 문자의 20층 아파트 0층부터 19층까지.. 문자열 끝에는 0 NULL이라 부르는 정수로 바꾸면 0인 ascii code 들어있음.
+// str[0] 0호실 첫째집 str[4] 5번째집... str[19] 마지막 20번째집
+scanf(“%s”, str); // str 자체가 주소임.
+
+toUpper(str);
+
+printf(“%s\n”, str);
+
+입력 hongik 출력 HONGIK
