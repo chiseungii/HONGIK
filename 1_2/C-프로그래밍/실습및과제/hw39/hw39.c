@@ -1,3 +1,7 @@
+/*
+ 2차원 배열 이용 - 행렬 더하기 함수
+ */
+
 #include <stdio.h>
 
 int myplus(int a[3][3], int b[3][3], int result[3][3])
