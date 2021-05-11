@@ -1,0 +1,6 @@
+다음의 func() 함수는 호출되는 횟수 만큼의 양의 정수를 되돌려 준다. 이 목적을 달성하기 위하여 함수를 완성하세요. 즉 func()이 2번째 호출되면 2를 return해 준다.
+
+func()
+{ int called_num=0;
+  return (called_num);
+}
