@@ -1,0 +1,12 @@
+#include <stdio.h>	// 근의 공식 계산 코딩
+#include <math.h>
+
+void main(){
+	double a, b, c, x1, x2;
+	scanf("%f %f %c %f %f\n", &a, &b, &c, ...);
+	// x^0.5 =====> sqrt(x)
+
+	printf("input equation %f x^2 + %f x + %f = 0\n", a, b, c);
+	x1 = () / 2.0 / a;
+	x2 = () / 2.0 / a;
+}
