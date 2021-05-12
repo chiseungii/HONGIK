@@ -1,0 +1,62 @@
+문자열 변수 아파트 시작은 0층
+char ch;
+char str[20]; 0--------19층 총 20개
+
+int f(int a[]){	// 에러 아님 int f(int a[1]) a 변수
+	int b[];	// 에러
+	int c[] = {1, 2, 3};	// 에러 아님 c 상수 주소
+}
+
+문자열은 맨 끝에 0을 넣어야 맨 마지막임을 나타낼 수 있음.
+ascii code로 0 NULL 정수 값으로 0
+
+
+
+문자열을 정수로 변환
+
+int myatoi(char str[3]){	// 3 걱정 말자. 사실 str은 변수
+	int sum = 0, I = 0;
+	for ( ; str[i] ; ++i )
+		sum = sum * 10 + (str[i] - ‘0’);
+	return sum;
+}
+
+
+
+문자열 길이 계산
+
+int mystrlen(char str[3]){
+	int length = 0;
+	for ( ; str[length] ; ++length );
+	return length;
+}
+
+int mystrlen2(char str[]){
+	int length = 0;
+	for ( ; *(str + length) ; ++length );
+	return length;
+}
+
+int mystrlen3(char str[]){
+	int length = 0;
+	for ( ; *str ; ++length, ++str );
+	return length;
+}
+
+
+
+문자열 복사
+
+int mystrcpy(char target[3], char source[3]){
+	int I = 0;
+	for ( ; target[i] = source[i] ; ++i );
+}
+
+int mystrcpy2(char target[3], char source[3]){
+	int I = 0;
+	for ( ; *(target + I) = source[i] ; ++i );
+}
+
+int mystrcpy3(char target[], char source[]){
+	for ( ; *target++ = *source++ ; );
+}
