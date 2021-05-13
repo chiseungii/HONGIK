@@ -1,0 +1,20 @@
+Programming Practice 2
+
+1. 1부터 10까지 합을 구해 화면에 출력
+
+2. ASCII code ‘A’부터 ‘Z’까지 문자를 화면에 출력
+
+3. “hongik university”를 모두 대문자로 바꾸는 프로그램
+
+4. Rectangle class를 구현하시오.
+	멤버 변수
+		float: width, height
+	멤버 함수
+		float Area(): 면적을 계산해서 리턴
+		float perimeter(): 둘레를 계산해서 리턴
+		bool isSquare(): 정사각형이면 true, 아니면 false 리턴
+
+5. Rectangle class를 테스트 할 main() 함수를 작성하시오
+	Rectangle 객체 rect1 생성 후 width, height가 각각 3.5, 4.7 되게 설정
+		면적과 둘레 출력
+		정사각형인지 여부를 출력
