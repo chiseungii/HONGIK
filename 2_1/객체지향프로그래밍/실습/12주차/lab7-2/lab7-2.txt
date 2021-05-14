@@ -1,0 +1,40 @@
+Programming Practice 7-2
+
+- Programming Practice 7 class PhoneNumber의 추가사항:
+	class PhoneBook을 friend로 정의할 것
+
+- class PhoneBook을 작성하시오.
+	멤버 변수
+		phoneNum: PhoneNumber 객체를 동적으로 할당하여 10개 가지고 있는다.
+		maxNum: 현재 할당된 객체 최대 개수를 관리한다 (초기값 = 10)
+		num: 현재 사용중인 객체 개수를 관리한다 (초기값 = 0)
+
+	void addNum(PhoneNumber);
+		새로운 전화번호 객체를 삽입한다.
+	PhoneNumber searchNum(char *name);
+		주어진 이름과 같은 이름의 전화번호를 객체를 리턴한다.
+	void print();
+		전체 전화번호록을 출력한다.
+
+1. main() 함수 테스트
+	PhoneNumber pn1;
+	PhoneNumber pn2(“Hongik_in”, “01012345678”);
+	PhoneNumber pn3(“Comgong_in”, “01012345679”);
+
+	PhoneBook pb;
+	pb.addNum(pn1);
+	pb.addNum(pn2);
+
+	PhoneNumber pn4 = pb.searchNum(“Comgong_in”);
+	pn4.print();
+
+	pb.print();
+
+- Inheritance로 Class Shape와 Rectangle, Ellipse을 작성하시오.
+	Base class: Shape
+		(Programming Practice 7과 같음)
+
+		가상 함수
+			int getArea();
+
+2. main() 함수 테스트
