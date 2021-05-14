@@ -1,0 +1,33 @@
+Programming Practice 5
+
+- Class Person을 작성하시오.
+	멤버 변수
+		int id;
+		char *name;
+		char *address;
+		char *phoneNumber;
+
+	멤버 함수
+		생성자 Person(); // id=0, pointer들은 null로 초기화
+		생성자 Person(int id, char name[], char address[], char phone[]);				입력 값에 따라 초기화
+		생성자 Person(Person &p); // 복사 생성자
+		소멸자 ~Person();	 // 동적 메모리 반환
+		void changeID(int id);
+		void changeName(char *name);
+		void changeAddress(char *addr);
+		void changePhoneNumber(char *number);
+		void print(); // 화면에 id, 이름, 주소, 전화번호 프린트
+
+1. 얕은 복사 생성자를 구현하여 테스트 하시오.
+
+2. 깊은 복사 생성자를 구현하여 테스트 하시오.
+
+- main() 함수 테스트
+	Person p(1, "Hongik In", "Wowsan-ro 94 Mapo-gu, Seoul, Korea", "02-320-0114");
+	Person q(p);
+	p.print();
+	q.print();
+
+	q.changeName("Com-Gong In");
+	p.print();
+	q.print();
