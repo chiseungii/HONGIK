@@ -1,0 +1,40 @@
+Programming Practice 6
+
+- Class Complex을 작성하시오.
+	멤버 변수
+		double real;
+		double img;
+	멤버 함수
+		생성자 Complex(); // 0으로 초기화
+		생성자 Complex(double a); // 실수부분은 a, 허수부분은 0으로 초기화
+		생성자 Complex(double a, double b); // a+bi로 초기화
+		소멸자 ~Complex();
+		void setReal(double a);
+		void setImg(double a);
+		double getReal();
+		double getImg();
+		void print(); // 화면에 프린트
+		Complex add(double a); // 실수부분만 a를 더함
+		Complex add(double a, double b); // a+bi를 더함
+		Complex add(Complex c); // c를 더함
+
+	멤버 함수
+		아래의 두 멤버 함수를 default 파라미터를 사용하여 하나의 함수로 구현하시오.
+		Complex add(double a); // 현재 Complex 객체에 실수부분만 a를 더함
+				       // 결과 객체를 리턴
+		Complex add(double a, double b); // 현재 Complex 객체에 a+bi를 더함
+						 // 결과 객체를 리턴
+
+1. main() 함수 테스트
+	Complex c1(1, 2);
+	Complex c2(2, 3);
+
+	c1.print();
+	Complex c3 = c1.add(3);
+	c1.print();
+	c3.print();
+
+	c2.print();
+	Complex c4 = c2.add(c1);
+	c2.print();
+	c4.print();
