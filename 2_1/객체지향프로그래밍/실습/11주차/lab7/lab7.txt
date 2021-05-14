@@ -1,0 +1,47 @@
+Programming Practice 7
+
+- 한 사람의 이름과 그 사람의 휴대 전화번호를 저장하고 관리하는 class인 PhoneNumber를 작성하시오.
+	member 변수:
+		char *name; // 사람의 영문 이름: 이름 저장 전에 동적 메모리 할당 필요
+		char number[11]; // 11자리 휴대전화번호 – 10자리인 경우는 없다고 가정
+
+	member 함수:
+		constructor 1: parameter가 없음. 사람이름은 “Unknown”으로 초기화. 전화번호는 모두 0으로 초기화.
+		constructor 2: PhoneNumber(char *Name, char *Num);
+			// 사람이름과 전화번호를 입력 받아 초기화
+			// Name은 null로 끝나는 string. Num은 11자리
+		destructor: 필요한 경우 name에 할당된 동적 메모리 반환
+		void print(); // 이름과 전화번호를 프린트
+
+1. main() 함수 테스트
+	PhoneBook pb1;
+	PhoneBook pb2(“Hongik_in”, “01012345678”);
+
+	pb1.print();
+	pb2.print();
+
+- Inheritance로 Class Shape와 Rectangle을 작성하시오.
+	Base class: Shape
+		멤버 변수
+			int width, height;
+
+		멤버 함수
+			생성자 Shape(); // width, height를 0으로 초기화
+			생성자 Shape(int w, int h); // width, height를 w, h로 초기화
+			소멸자 ~Shape();
+			void setHeight(int h);
+			void setWidth(int w);
+			int getHeight();
+			int getWidth();
+
+2. main() 함수 테스트
+	int main(void) {
+		Rectangle Rect;
+		Rect.setWidth(5);
+		Rect.setHeight(7);
+
+		// Print the area of the object.
+		cout << “Total area: ” << Rect.getArea() << endl;
+
+		return 0;
+	}
