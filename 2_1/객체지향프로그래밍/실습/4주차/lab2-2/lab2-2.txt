@@ -1,0 +1,15 @@
+Programming Practice 2-2
+
+1. Box class를 작성하시오
+	멤버 변수
+		int width, height
+		char fill
+	멤버 함수
+		생성자: w, h
+		void setFill(char c)
+		void setSize(w, h)
+		void draw()
+
+2. main() 함수를 작성하시오.
+	Box b(3, 4)
+	b.setFill('*'
