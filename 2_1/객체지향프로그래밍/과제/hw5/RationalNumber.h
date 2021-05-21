@@ -2,11 +2,12 @@
 #define RATIONALNUMBER_H
 
 #include <iostream>
+#include "IntNumber.h"
 using namespace std;
 
-class RationalNumber {
+class RationalNumber : public IntNumber {
 private:
-	int numerator, denominator;	// 분자, 분모
+	int denominator;	// 분자
 	void reduction();	// 약분
 
 public:
