@@ -1,0 +1,8 @@
+1. Implement add(), search() and delete(), and submit “backend5.c”. DO NOT CHANGE ANYTHING ELSE.
+
+2. For this assignment, implement the usual address book using hashing with chaining. Note that we do not have “P” (print) command now. (Think about why.)
+
+3. For simplicity, we allow duplicate names, and add() puts the newly-created node in front of the linked list.
+
+4. The functions search() and delete() prints out the number of key comparisons made to perform the operations.
+Note that they do even if the operations were not successful. (Why?)
