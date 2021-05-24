@@ -5,6 +5,6 @@
 
 - 직접 작성한 부분:
   1) backend-hash.c 중
-    1. add() (lines 111 ~ 124)
-    2. search() (lines 138 ~ 157)
-    3. Delete() (lines 170 ~ 195)
+     * add() (lines 111 ~ 124)
+     * search() (lines 138 ~ 157)
+     * Delete() (lines 170 ~ 195)
