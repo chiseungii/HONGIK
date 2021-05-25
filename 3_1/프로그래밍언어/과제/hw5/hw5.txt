@@ -1,0 +1,15 @@
+1. 하노이의 탑
+	Query: “hanoi(원판의 개수).”
+	주의 사항 : 원판을 1에서 2로 옮길 것!
+
+2. Quick Sort
+	Query: “quickSort(리스트).”
+	주의 사항 : 출력이 똑같은 모양일 것!
+
+3. nQueen
+	Query: “nQueen(N).”
+	주의 사항 : Queen의 Col 위치만 list 형태로 출력
+
+4. Shortest Path
+	Query: “sp(출발, 도착).”
+	주의 사항 : 경로 list와 거리를 출력
